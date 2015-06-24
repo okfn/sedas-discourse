@@ -1,0 +1,58 @@
+header.navbar {
+  background-color:$primary;
+  margin:0;
+  padding:18px;
+  
+  a {
+    color:$tertiary;
+  }
+  
+  a:link,
+  a:visited {
+    color:$secondary;
+    display:block;
+  }
+  
+  .navbar-brand {
+    float:left;
+    display:table;
+    
+    a {
+      height:60px;
+      display:table-cell;
+      vertical-align:middle;
+    }
+    
+    img {
+      max-height:60px;
+    }
+  }
+  
+  nav {
+    ul {
+      clear: left;
+      margin:0;
+      
+      li {
+        display:block;
+        font-weight:600;
+      }
+      @media (min-width:992px) {
+        clear: none;
+        text-align: right;
+        
+        li {
+          display:inline-block;
+          text-transform:uppercase;
+          font-weight:700;
+          
+          a {
+            height:60px;
+            line-height:60px;
+            padding:0 12px;
+          }
+        }
+      }
+    }
+  }
+}
